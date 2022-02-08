@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests",
-    "test:watch": "test -- --wach",
+    "test:watch": "yarn test --watch",
     "test:staged": "test -- --findRelatedTests",
     "test:ci": "test -- --covereage"
   },
