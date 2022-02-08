@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --passWithNoTests",
+    "test:watch": "test -- --wach",
+    "test:staged": "test -- --findRelatedTests",
+    "test:ci": "test -- --covereage"
   },
   "author": "Leonardo Oliveira <c.p.leonardooliveira@gmail.com>",
   "license": "MIT",
