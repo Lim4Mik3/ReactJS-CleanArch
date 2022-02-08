@@ -2,6 +2,9 @@
   "name": "clean-react",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "author": "Leonardo Oliveira <c.p.leonardooliveira@gmail.com>",
   "license": "MIT",
   "devDependencies": {
