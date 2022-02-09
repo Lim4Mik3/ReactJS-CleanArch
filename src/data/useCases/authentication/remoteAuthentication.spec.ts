@@ -45,7 +45,7 @@ describe('RemoteAuthentication Suite Tests', () => {
     const { sut, httpPostClientSpy } = makeSut();
     
     httpPostClientSpy.response = {
-      statusCode: HttpStatusCode.unathorized
+      statusCode: HttpStatusCode.unauthorized
     };
 
     const promise = sut.auth(mockAuthentication());
