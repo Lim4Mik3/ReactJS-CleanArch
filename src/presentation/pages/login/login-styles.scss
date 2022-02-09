@@ -107,6 +107,20 @@ button {
         text-decoration: underline;
       }
     }
+
+    .errorWrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      display: none;
+    }
+
+    .error {
+      display: none;
+      color: $primaryDark;
+      font-size: 1.1rem;
+    }
   }
 
   .footer {
