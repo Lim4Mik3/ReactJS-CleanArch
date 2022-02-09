@@ -20,31 +20,36 @@ module.exports = {
       {
         test: /\.ts(x?)$/,
         loader: 'ts-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.scss$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: 'style-loader',
           },
           {
             loader: 'css-loader',
             options: {
-              modules: true
-            }
+              modules: true,
+            },
           },
           {
-            loader: 'sass-loader'
-          }
-        ]
-      }
-    ]
+            loader: 'sass-loader',
+          },
+        ],
+      },
+    ],
   },
   devServer: {
-    contentBase: './public',
-    writeToDisk: true,
+    devMiddleware: {
+      writeToDisk: true,
+    },
+    static: {
+      directory: './public',
+    },
     historyApiFallback: true,
+    port: 8080,
   },
   externals: {
     react: 'React',
